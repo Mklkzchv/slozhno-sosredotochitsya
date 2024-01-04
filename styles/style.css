@@ -391,10 +391,6 @@
 @media (width >= 768px) {
   @media (width < 1024px) {
 
-    .header__promo {
-      margin-block-start: 162px;
-    }
-
     .header__theme-menu {
       margin-block-start: 174px;
     }
@@ -405,6 +401,7 @@
 
     .header__promo {
       margin-bottom: 163px;
+      margin-block-start: 162px;
     }
 
     .what__row {
@@ -510,10 +507,6 @@
 
 @media (width >= 1024px) {
 
-  .header__promo {
-    margin-block-start: 114px;
-  }
-
   .header__theme-menu {
     justify-self: center;
     margin-block-start: 0;
@@ -540,6 +533,7 @@
 
   .header__promo {
     max-inline-size: 491px;
+    margin-block-start: 114px;
   }
 
   .main__section {
