@@ -346,7 +346,7 @@
   }
 
   .why__container {
-    padding-top: 30px;
+    padding-top: 40px;
     margin-left: 10px;
     flex-direction: column;
   }
@@ -435,10 +435,12 @@
       margin-left: 20px;
       margin-right: 20px;
     }
-    
+
     .cards__container {
       margin-left: 20px;
       margin-right: 20px;
+      padding-top: 60px;
+      grid-template-rows: auto 192px 230px 319px;
     }
 
     .decorations {
@@ -466,8 +468,6 @@
     padding-top: 173px;
     padding-bottom: 0px;
   }
-
-
   
   .main__section {
     grid-template-columns: 236px 1fr 1fr;
