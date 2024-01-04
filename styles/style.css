@@ -45,10 +45,8 @@
 .decorated-zone::before {
   content: '';
   position: absolute;
-  /*display: block;*/
   block-size: 25px;
   inline-size: 25px;
-
   border-block-start: 1px solid var(--menu-color, #353430);
   border-inline-end: 1px solid var(--menu-color, #353430);
   inset-block-start: var(--general-padding, 10px);
@@ -58,10 +56,8 @@
 .decorated-zone::after {
   content: '';
   position: absolute;
-  /*display: block;*/
   block-size: 25px;
   inline-size: 25px;
-
   border-inline-start: 1px solid var(--menu-color, #353430);
   border-block-end: 1px solid var(--menu-color, #353430);
   inset-inline-start: var(--general-padding, 10px);
@@ -299,31 +295,11 @@
 .footer {
   background-color: var(--background-color, #fff1f7);
   display: grid;
-  /*grid-template-rows: auto 1fr auto;*/
   padding: var(--general-padding, 10px);
   height: 100vh;
   min-height: 668px;
 }
-/*
-.footer::before {
-  content: '';
-  display: block;
-  justify-self: end;
-  border-inline-end: 1px solid var(--menu-color, #353430);
-  border-block-start: 1px solid var(--menu-color, #353430);
-  block-size: 25px;
-  inline-size: 25px;
-}
 
-.footer::after {
-  content: '';
-  display: block;
-  border-inline-start: 1px solid var(--menu-color, #353430);
-  border-block-end: 1px solid var(--menu-color, #353430);
-  block-size: 25px;
-  inline-size: 25px;
-}
-*/
 .footer .decorations {
   justify-self: center;
   align-self: center;
@@ -338,8 +314,7 @@
   }
 
   .header__theme-menu {
-    --menu-margin: 64px;
-    margin-block-start: var(--menu-margin, 65px);
+    margin-block-start: 64px;
   }
 
   .cards__container {
@@ -379,8 +354,7 @@
   }
 
   .header__promo {
-    --promo-margin: 55px;
-    margin-block-start: var(--promo-margin, 55px);
+    margin-block-start: 55px;
     margin-block-end: 0;
   }
 
@@ -407,7 +381,6 @@
   .cards__image:nth-of-type(2),
   .cards__image:nth-of-type(3) {
     grid-row: span 1
-
   }
 
   .footer {
@@ -417,9 +390,13 @@
 
 @media (width >= 768px) {
   @media (width < 1024px) {
-    :root {
-      --menu-margin: 174px;
-      --promo-margin: 162px;
+
+    .header__promo {
+      margin-block-start: 162px;
+    }
+
+    .header__theme-menu {
+      margin-block-start: 174px;
     }
 
     .header {
@@ -532,18 +509,18 @@
 }
 
 @media (width >= 1024px) {
-  :root {
-    --menu-margin: 0;
-    --promo-margin: 114px;
+
+  .header__promo {
+    margin-block-start: 114px;
   }
 
   .header__theme-menu {
     justify-self: center;
+    margin-block-start: 0;
   }
 
   .header__theme-menu-list {
     flex-direction: row;
-    gap: 10px;
   }
 
   .header .decorations {
