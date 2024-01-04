@@ -573,4 +573,12 @@
     display: flex;
     flex-direction: row;
   }
+
+  .what__container {
+    padding-top: 60px;
+  }
+
+  .cards__container {
+    padding-top: 60px;
+  }
 }
