@@ -236,6 +236,14 @@
   margin: 0 auto;
 }
 
+.how__container {
+  max-width: 984px;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .cards {
   width: 100%;
   margin: 0 auto;
@@ -378,6 +386,12 @@
     padding-top: 30px;
   }
   
+  .how__container {
+    padding-top: 30px;
+    margin-left: 10px;
+    flex-direction: column;
+  }
+
   .cards__question {
     grid-column: span 1;
   }
@@ -432,6 +446,11 @@
     }
 
     .why__container {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    .how__container {
       margin-left: 20px;
       margin-right: 20px;
     }
@@ -576,6 +595,10 @@
 
   .what__container {
     padding-top: 60px;
+  }
+
+  .how__container {
+    margin: 0 auto;
   }
 
   .cards__container {
