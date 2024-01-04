@@ -34,7 +34,7 @@
   justify-items: end;
   align-items: start;
   padding: var(--general-padding, 10px);
-  block-size: max(100vb, 728px);
+  block-size: max(100vb, 668px);
 }
 
 .header::before {
