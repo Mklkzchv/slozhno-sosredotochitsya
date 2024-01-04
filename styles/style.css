@@ -34,7 +34,8 @@
   justify-items: end;
   align-items: start;
   padding: var(--general-padding, 10px);
-  block-size: max(100vb, 668px);
+  height: 100vh;
+  min-height: 668px;
 }
 
 .header::before {
@@ -289,7 +290,8 @@
   display: grid;
   grid-template-rows: auto 1fr auto;
   padding: var(--general-padding, 10px);
-  block-size: max(100vb, 668px);
+  height: 100vh;
+  min-height: 668px;
 }
 
 .footer::before {
@@ -523,7 +525,7 @@
 
   .header .decorations {
     text-shadow: 4px 4px 0px #ff0070;
-    padding-top: 5px;
+    padding-top: 65px;
   }
 
   .footer .decorations {
