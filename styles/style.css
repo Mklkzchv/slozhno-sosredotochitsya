@@ -193,7 +193,6 @@
 .section__subtitle {
   margin: 0;
   color: #000028;
-  background-color: var(--accent-color, #ff8dcb);
   font-size: 18px;
   font-style: normal;
   line-height: 23.4px; /* 130% */
@@ -222,7 +221,6 @@
 .subsection {
   margin: 0;
   color: #000028;
-  background-color: var(--accent-color, #ff8dcb);
   font-size: 18px;
   font-style: normal;
   line-height: 23.4px; /* 130% */
@@ -449,10 +447,27 @@
     }
   }
 
-  :root {
-    --general-padding: 20px;
-    --main-padding-block: 60px;
-    --main-gap: 80px;
+  .decorated-zone::before {
+    inset-block-start: 20px;
+    inset-inline-end: 20px;
+  }
+
+  .decorated-zone::after {
+    inset-inline-start: 20px;
+    inset-block-end: 20px;
+  }
+
+  .header__bulb {
+    inset-block-start: 20px;
+    inset-inline-end: calc(20px + 8px);
+  }
+
+  .header {
+    padding: 20px;
+  }
+  
+  .footer {
+    padding: 20px;
   }
 
   .decorations {
